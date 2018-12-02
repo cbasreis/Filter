@@ -1,4 +1,3 @@
-# Cbas mighty filter for ENDGAME
+## Cbas mighty filter for ENDGAME
+#### Filter made for Lusitanium guild by cbas
 V3.4
-
-## Filter made for Lusitanium guild by cbas
