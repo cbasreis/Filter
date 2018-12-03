@@ -29,7 +29,6 @@
 #===============================================================================================================
 # INDEX use numbers for fast travel
 #===============================================================================================================
-
 # 000 -6 LINKS -------------------------------------------------------------------------------------------------
 
 # 001 -ELDER ITEMS\SHAPER ITEMS --------------------------------------------------------------------------------
@@ -920,11 +919,11 @@ Show
 Show # T1
 	BaseType "Stygian Vise"
 	ItemLevel >= 84
-	SetFontSize 45
+	SetFontSize 40
 	SetTextColor 255 255 255 255         
 	SetBorderColor 232 7 7 255       #red
 	SetBackgroundColor 255 125 0 255     
-	PlayAlertSound 6 99 
+	PlayAlertSound 2 99 
     MinimapIcon 0 Red Star
 	PlayEffect Red	
 
@@ -2137,33 +2136,63 @@ Show
 #  0101 Atlas Bases - GREEN BORDER
 #===============================================================================================================
 Show
-    BaseType "Two-Toned Boots" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Steel Ring" "Opal Ring" "Crystal Belt" 
+    BaseType "Two-Toned Boots" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
 	ItemLevel >= 84
-    Rarity <= Rare
-	SetBorderColor 3 169 42 255
-    SetFontSize 40
+    Rarity = Rare
+	SetBorderColor 3 169 42 255 #green	
+	SetBackgroundColor 255 220 0 250 #yellow 2
+	SetTextColor 0 0 0 255
+    SetFontSize 38
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green
+	
+Show
+    BaseType "Steel Ring" "Opal Ring" "Crystal Belt" 
+	ItemLevel >= 82
+    Rarity = Rare
+	SetBorderColor 3 169 42 255 #green	
+	SetBackgroundColor 255 220 0 250 #yellow 2
+	SetTextColor 0 0 0 255
+    SetFontSize 38
 	MinimapIcon 1 Green Hexagon
 	PlayEffect Green 
+
 Show
-    BaseType "Steel Ring" "Opal Ring" "Crystal Belt" 
-    Rarity <= Rare
-	SetBorderColor 3 169 42 255
-    SetFontSize 40
-	MinimapIcon 1 Green Hexagon
-	PlayEffect Green Temp
-Show
-    BaseType "Two-Toned Boots" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-    Rarity <= Rare
-	SetBorderColor 3 169 42 255
+    BaseType "Two-Toned Boots" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt"
+	ItemLevel >= 82
+    Rarity <= Magic
+	SetBorderColor 3 169 42 255 #green
+	SetBackgroundColor 0 0 0 190 
     SetFontSize 35
-	MinimapIcon 1 Green Hexagon
 	PlayEffect Green Temp
+	
 Show
     BaseType "Steel Ring" "Opal Ring" "Crystal Belt" 
-    Rarity <= Rare
-	SetBorderColor 3 169 42 255
-    SetFontSize 40
+	ItemLevel >= 82
+    Rarity <= Magic
+	SetBorderColor 3 169 42 255 #green
+    SetBackgroundColor 0 0 0 190 	
+    SetFontSize 38
+	MinimapIcon 1 Green Hexagon
+	PlayEffect Green 
+
+Show
+    BaseType "Steel Ring" "Opal Ring" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt"
+	Rarity = Rare
+    SetBorderColor 3 169 42 255 #green
+    SetBackgroundColor 0 0 0 190 	
+    SetFontSize 35
 	PlayEffect Green Temp
+	
+Hide
+    BaseType "Two-Toned Boots" "Bone Helmet" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" 
+    Rarity = Rare
+	SetBorderColor 3 169 42 255 #green	
+	SetBackgroundColor 0 0 0 190 
+    SetFontSize 35
+	
+
+	
 	
 #===============================================================================================================
 # 0102 UNSET RING for craft
@@ -2732,4 +2761,3 @@ Show
 	
 #===============================================================================================================
 #===============================================================================================================
-
